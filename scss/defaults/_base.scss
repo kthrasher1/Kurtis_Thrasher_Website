@@ -1,0 +1,98 @@
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 5em);
+    display: flex;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .welcome div {
+        margin-top: 175px;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: calc(100vh - 30em);
+
+
+        h1 {
+            font-size: 150px;
+            margin-right: 40px;
+
+        }
+
+        .name::after {
+            content: "";
+            float: right;
+            background: black;
+            width: 65%;
+            height: 10px;
+            border-radius: 15px;
+            margin-top: -15px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        p {
+            margin-top: 10px;
+            width: auto;
+            font-size: 25px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            width: 150px;
+            margin-top: 50px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            padding: 1.25rem 1.75rem;
+
+            &:hover {
+                background-color: rgba($color: black, $alpha: 0.9);
+            }
+        }
+    }
+
+    .about-me div {
+        position: relative;
+        margin-left: 15%;
+        margin-right: 15%;
+        //height: calc(100vh - 30em);
+
+        h3 {
+            font-size: 50px;
+            margin-bottom: 1em;
+        }
+
+        p{
+            font-size: 25px;
+            margin-bottom: 2em;
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(140px, 200px));
+            font-size: 25px;
+
+            li {
+                margin: 10px 10px 10px 30px;
+            }
+
+            
+        }
+    }
+
+}

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Quicksand:400,500,600,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 5em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome div {
+    margin-top: 175px;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: calc(100vh - 30em);
+  }
+  .welcome div h1 {
+    font-size: 150px;
+    margin-right: 40px;
+  }
+  .welcome div .name::after {
+    content: "";
+    float: right;
+    background: black;
+    width: 65%;
+    height: 10px;
+    border-radius: 15px;
+    margin-top: -15px;
+  }
+  .welcome div h2 {
+    font-size: 50px;
+  }
+  .welcome div p {
+    margin-top: 10px;
+    width: auto;
+    font-size: 25px;
+  }
+  .welcome div a {
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 1.25rem 1.75rem;
+  }
+  .welcome div a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .about-me div {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .about-me div h3 {
+    font-size: 50px;
+    margin-bottom: 1em;
+  }
+  .about-me div p {
+    font-size: 25px;
+    margin-bottom: 2em;
+  }
+  .about-me div ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(140px, 200px))[2];
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+    font-size: 25px;
+  }
+  .about-me div ul li {
+    margin: 10px 10px 10px 30px;
+  }
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Inconsolata", monospace;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  font-family: "Inconsolata", monospace;
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+}
+
+.navbar {
+  font-size: 18px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  width: 50px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 35px;
+  }
+  .logo {
+    margin-top: 0;
+    width: 70px;
+  }
+  .moon {
+    margin-top: 0;
+    width: 25px;
+    margin: 0 10px 10px 25px;
+    cursor: pointer;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .logo:hover,
+  .nav-links:hover {
+    color: #333;
+  }
+}
+/*# sourceMappingURL=main.css.map */
