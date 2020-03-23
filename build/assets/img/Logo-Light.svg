@@ -23,13 +23,13 @@
   </defs>
 
   <g id="Group_36" data-name="Group 36" transform="translate(-6.851 -19.559) rotate(-10)">
-    <text id="K" transform="translate(16.201 204)" fill="#fff" font-size="153">
+    <text id="K" transform="translate(16.201 204)" fill="#000" font-size="153">
       <tspan x="0" y="0">K</tspan>
     </text>
-    <text id="K-2" data-name="K" transform="translate(0.433 204)" fill="#000" font-size="153">
+    <text id="K-2" data-name="K" transform="translate(0.433 204)" fill="#fff" font-size="153">
       <tspan x="0" y="0">K</tspan>
     </text>
-    <circle id="Ellipse_1" data-name="Ellipse 1" cx="10.899" cy="10.899" r="10.899" fill="#fff"
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="10.899" cy="10.899" r="10.899"
       transform="translate(100.843 184.93)" />
   </g>
 

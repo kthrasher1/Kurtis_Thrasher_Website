@@ -37,15 +37,20 @@ darkModeToggler.addEventListener("click", function () {
 
 function changeImage() {
     let image = document.getElementById('js-dark-mode');
-    let logo = document.getElementById('logo');
+    let light = document.getElementById('light');
+    let dark = document.getElementById('dark');
 
     if (image_tracker == 'moon') {
+        light.classList.add("hidden");
+        dark.classList.remove("hidden");
         image.src = 'build/assets/img/sun.svg';
-        //logo.setAttribute("data", "build/assets/img/Logo-Light.svg");
+
         image_tracker = 'sun';
     } else {
+        dark.classList.add("hidden");
+        light.classList.remove("hidden");
         image.src = 'build/assets/img/half-moon.svg';
-        //logo.setAttribute("data", "build/assets/img/Logo-Dark.svg");
+
         image_tracker = 'moon';
     }
 }
