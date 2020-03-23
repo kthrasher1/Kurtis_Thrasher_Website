@@ -16,6 +16,9 @@ darkModeToggler.addEventListener("click", function () {
     document.querySelector("a").classList.toggle("darkmode--nav");
     document.getElementById("footer").classList.toggle("darkmode--footer");
 
+    var styleElem = document.head.appendChild(document.createElement("style"));
+    styleElem.innerHTML = ".name::after {background: white !important;}";
+
     //document.getElementById("btn").classList.toggle("darkmode--btn");
 
     var btns = document.getElementsByClassName('btn');
