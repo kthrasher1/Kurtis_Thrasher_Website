@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/16b588ee5b.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="build/assets/styles/main.css">
 </head>
 
@@ -18,7 +17,7 @@
             <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fa fa-bars"></i>
             </span>
-            <img src="build/assets/img/Logo-Dark.svg" class="logo" alt="">
+            <object class="logo" id="logo" data="build/assets/img/Logo-Dark.svg"></object>
             <ul class="main-nav" id="js-menu">
                 <li>
                     <a href="#" class="nav-links">About me</a>
@@ -36,9 +35,10 @@
                     <a href="#" class="nav-links">Resume</a>
                 </li>
                 <li>
-                    <span class="to-dark-mode" id="js-to-dark-mode">
-                        <img src="build/assets/img/half-moon.svg" class="moon" alt="">
-                    </span>
+
+                    <img src="build/assets/img/half-moon.svg" class="moon light" id="js-dark-mode"
+                        onclick="changeImage();" alt="">
+
                 </li>
             </ul>
 
@@ -52,7 +52,7 @@
             <p>A graduate computer scientist with a keen interest </br>
                 in web technologies.</p>
 
-            <a>Lets talk.</a>
+            <a class="btn" id="btn">Lets talk.</a>
         </div>
     </section>
 
@@ -292,25 +292,26 @@
         <div class="contact-container">
             <h3>Contact me</h3>
             <div class="contact-content">
-                <p>Not currently looking for freelance opportunities, but my inbox is always open. So definitely say hi...also follow me on my socials.</p>
+                <p>Not currently looking for freelance opportunities, but my inbox is always open. So definitely say
+                    hi...also follow me on my socials.</p>
                 <div class="socials">
                     <i class="fab fa-github"></i>
                     <i class="fab fa-codepen"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-linkedin-in"></i>
                 </div>
-                <a>Lets talk.</a>
+                <a class="btn">Lets talk.</a>
 
             </div>
         </div>
 
     </section>
 
-    <footer>
+    <footer id="footer">
         <div>
-        <p>Designed and build by Kurtis Thrasher</p>
-        <p>🏳️‍🌈</p>
-    </div>
+            <p>Designed and build by Kurtis Thrasher</p>
+            <p>🏳️‍🌈</p>
+        </div>
     </footer>
 
 </body>

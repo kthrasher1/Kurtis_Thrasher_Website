@@ -8,9 +8,146 @@
 }
 
 body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Inconsolata", monospace;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+}
+
+h5 {
+  font-family: "Inconsolata", monospace;
+}
+
+p {
+  font-family: "Inconsolata", monospace;
+  font-size: 25px;
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+}
+
+.navbar {
+  font-size: 18px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  width: 50px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+.darkmode--nav {
+  color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 35px;
+  }
+  .logo {
+    margin-top: 0;
+    width: 70px;
+  }
+  .moon {
+    margin-top: 0;
+    width: 25px;
+    margin: 0 10px 10px 25px;
+    cursor: pointer;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .logo:hover,
+  .nav-links:hover {
+    color: #333;
+  }
+}
+
+body {
   background-color: white;
   color: black;
   margin: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.darkmode--on {
+  color: #FFF;
+  background: #000;
 }
 
 section {
@@ -51,7 +188,7 @@ section {
     width: auto;
     font-size: 25px;
   }
-  .welcome a {
+  .welcome .btn {
     display: block;
     text-align: center;
     width: 150px;
@@ -65,8 +202,14 @@ section {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  .welcome a:hover {
+  .welcome .btn:hover {
     background-color: rgba(0, 0, 0, 0.9);
+  }
+  .welcome .darkmode--btn {
+    color: black;
+    background-color: white;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
   }
   .about-me {
     margin-bottom: 230px;
@@ -138,7 +281,6 @@ section {
     margin-bottom: 1em;
   }
   .projects .project-work .project-container {
-    color: white;
     font-size: 25px;
     display: -ms-grid;
     display: grid;
@@ -153,6 +295,7 @@ section {
   }
   .projects .project-work .project-container .project-info {
     background: black;
+    color: white;
     display: inline-block;
     width: 300px;
     height: 400px;
@@ -164,6 +307,10 @@ section {
     -ms-grid-rows: 1.5fr 0.5fr;
         grid-template-rows: 1.5fr 0.5fr;
         grid-template-areas: "header" "footer";
+  }
+  .projects .project-work .project-container .darkmode--project {
+    color: black;
+    background-color: white;
   }
   .projects .project-work .project-container .project-one {
     -ms-grid-row: 1;
@@ -383,6 +530,12 @@ section {
   .contact-me .contact-container a:hover {
     background-color: rgba(0, 0, 0, 0.9);
   }
+  .contact-me .contact-container .darkmode--btn {
+    color: black;
+    background-color: white;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+  }
   .contact-me .contact-container .socials {
     font-size: 25px;
     margin-top: 40px;
@@ -407,6 +560,10 @@ section {
   }
   footer p {
     font-size: 15px;
+  }
+  .darkmode--footer {
+    background-color: white;
+    color: black;
   }
 }
 
@@ -440,132 +597,6 @@ section {
   }
   .about-me div {
     width: 50%;
-  }
-}
-
-body {
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.6;
-}
-
-h1 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
-}
-
-h2 {
-  font-family: "Inconsolata", monospace;
-}
-
-h3 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 50px;
-}
-
-h4 {
-  font-family: "Quicksand", sans-serif;
-}
-
-h5 {
-  font-family: "Inconsolata", monospace;
-}
-
-p {
-  font-family: "Inconsolata", monospace;
-  font-size: 25px;
-}
-
-a {
-  font-family: "Quicksand", sans-serif;
-}
-
-.navbar {
-  font-size: 18px;
-  padding-bottom: 10px;
-  position: relative;
-}
-
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links {
-  text-decoration: none;
-  color: black;
-}
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.logo {
-  display: inline-block;
-  width: 50px;
-}
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: black;
-  font-size: 24px;
-}
-
-.active {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-bottom: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 30px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .main-nav li {
-    margin: 0;
-  }
-  .nav-links {
-    margin-left: 35px;
-  }
-  .logo {
-    margin-top: 0;
-    width: 70px;
-  }
-  .moon {
-    margin-top: 0;
-    width: 25px;
-    margin: 0 10px 10px 25px;
-    cursor: pointer;
-  }
-  .navbar-toggle {
-    display: none;
-  }
-  .logo:hover,
-  .nav-links:hover {
-    color: #333;
   }
 }
 /*# sourceMappingURL=main.css.map */

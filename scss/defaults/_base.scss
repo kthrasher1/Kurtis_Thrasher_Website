@@ -2,8 +2,15 @@ body {
     background-color: white;
     color: black;
     margin: 0;
+    transition: 0.3s ease;
 
 }
+
+.darkmode--on {
+    color: #FFF;
+    background: #000;
+  }
+
 
 section {
     position: relative;
@@ -11,6 +18,8 @@ section {
     height: calc(100vh - 5em);
     display: flex;
 }
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -50,7 +59,9 @@ section {
             font-size: 25px;
         }
 
-        a {
+
+
+        .btn {
             display: block;
             text-align: center;
             width: 150px;
@@ -67,6 +78,15 @@ section {
                 background-color: rgba($color: black, $alpha: 0.9);
             }
         }
+
+        .darkmode--btn{
+            color: black;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+        }
+
+
+
     }
 
     .about-me {
@@ -153,7 +173,7 @@ section {
             }
 
             .project-container {
-                color: white;
+
                 font-size: 25px;
                 display: grid;
                 margin-left: 10%;
@@ -165,6 +185,7 @@ section {
 
                 .project-info {
                     background: black;
+                    color: white;
                     display: inline-block;
                     width: 300px;
                     height: 400px;
@@ -174,6 +195,11 @@ section {
                     grid-template-rows: 1.5fr 0.5fr;
                     grid-template-areas: "header" "footer";
 
+                }
+
+                .darkmode--project{
+                    color: black;
+                    background-color: white;
                 }
 
                 .project-one {
@@ -288,6 +314,8 @@ section {
                     }
                 }
 
+
+
                 h4 {
                     margin: 10px;
                     margin-top: 0;
@@ -353,6 +381,13 @@ section {
                 }
             }
 
+            .darkmode--btn{
+                color: black;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+            }
+
+
             .socials{
                 font-size: 25px;
                 margin-top: 40px;
@@ -378,7 +413,14 @@ section {
         }
     }
 
+    .darkmode--footer{
+        background-color: white;
+        color: black;
+    }
+
 }
+
+
 
 @media screen and (min-width: 1400px) {
     section {
