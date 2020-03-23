@@ -343,9 +343,70 @@ section {
     margin: 0px 10px 10px 10px;
     float: right;
     display: block;
+    cursor: pointer;
   }
   .projects .project-work .project-container .icon {
     margin: 50px 10px 0px 10px;
+  }
+  .contact-me {
+    height: 400px;
+    margin-bottom: 100px;
+  }
+  .contact-me .contact-container {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 50%;
+  }
+  .contact-me .contact-container h3 {
+    margin-bottom: 0.5em;
+    font-size: 45px;
+  }
+  .contact-me .contact-container .contact-content {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .contact-me .contact-container a {
+    display: block;
+    text-align: center;
+    width: 150px;
+    font-weight: 600;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 1.25rem 1.75rem;
+    cursor: pointer;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .contact-me .contact-container a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .contact-me .contact-container .socials {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+  .contact-me .contact-container .socials i {
+    margin-right: 10px;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+  }
+  footer p {
+    font-size: 15px;
   }
 }
 
@@ -403,6 +464,10 @@ h3 {
 
 h4 {
   font-family: "Quicksand", sans-serif;
+}
+
+h5 {
+  font-family: "Inconsolata", monospace;
 }
 
 p {

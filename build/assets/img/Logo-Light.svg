@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="149.824" height="221.644" viewBox="0 0 149.824 221.644">
-  <g id="Group_33" data-name="Group 33" transform="translate(-6.851 -19.559) rotate(-10)">
-    <text id="K" transform="translate(16.201 204)" fill="#fff" font-size="153" font-family="Oswald-RegularItalic, Oswald" font-style="italic"><tspan x="0" y="0">K</tspan></text>
-    <text id="K-2" data-name="K" transform="translate(0.433 204)" font-size="153" font-family="Oswald-RegularItalic, Oswald" font-style="italic"><tspan x="0" y="0">K</tspan></text>
-    <circle id="Ellipse_1" data-name="Ellipse 1" cx="10.899" cy="10.899" r="10.899" transform="translate(100.843 184.93)" fill="#fff"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="149.824" height="221.644"><g transform="matrix(.984808 -.173648 .173648 .984808 -6.851 -19.559)"><text fill="#fff" font-size="153" font-family="Oswald-RegularItalic, Oswald" font-style="italic"><tspan x="16.201" y="204">K</tspan></text><text font-size="153" font-family="Oswald-RegularItalic, Oswald" font-style="italic"><tspan x="0.433" y="204">K</tspan></text><circle cx="111.742" cy="195.829" r="10.899" fill="#fff"/></g></svg>
