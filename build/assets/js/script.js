@@ -15,23 +15,13 @@ function darkmode() {
     document.getElementById("footer").classList.toggle("darkmode--footer");
 
 
-    if(line_tracker == 'black'){
-        let styleElem = document.head.appendChild(document.createElement("style"));
-        styleElem.innerHTML = ".name::after {background: white !important;}";
-
-        line_tracker  = 'white';
-
-    }else{
-        let styleElem = document.head.appendChild(document.createElement("style"));
-        styleElem.innerHTML = ".name::after {background: black !important;}";
-
-        line_tracker = 'black';
-    }
-
 
     let btns = document.getElementsByClassName('btn');
     for (let i = 0; i < btns.length; i++) {
         btns[i].classList.toggle("darkmode--btn");
+
+        let styleElem = document.head.appendChild(document.createElement("style"));
+        styleElem.innerHTML = ".btn:hover {background: #F1F1F1 !important;}";
     }
 
     let project = document.getElementsByClassName('project-info');
