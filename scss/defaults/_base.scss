@@ -69,6 +69,10 @@ footer {
         height: calc(100vh - 5em);
     }
 
+    .hidden-desk{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {

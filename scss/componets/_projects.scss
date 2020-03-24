@@ -30,8 +30,8 @@
 
             }
 
-            .project-footer{
-                p{
+            .project-footer {
+                p {
                     font-size: 15px;
                 }
 
@@ -190,10 +190,11 @@
         margin-bottom: 235px;
         justify-content: left;
 
+
         .project-work {
             margin-left: 14%;
             width: 60%;
-
+            justify-content: center;
 
 
             h3 {
@@ -217,8 +218,11 @@
 }
 
 @media screen and (min-width: 1400px) {
-    .project-container {
-        margin-left: 10%;
-        margin-right: 10%;
+    .projects {
+
+        .project-container {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
     }
 }

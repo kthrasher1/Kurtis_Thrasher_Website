@@ -17,9 +17,10 @@
             <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fa fa-bars"></i>
             </span>
-            <object class="logo" id="light" data="build/assets/img/Logo-Light.svg"></object>
-            <object class="logo hidden" id="dark" data="build/assets/img/Logo-Dark.svg"></object>
-
+            <!-- <object class="logo" id="light" data="build/assets/img/Logo-Light.svg"></object> -->
+            <!-- <object class="logo hidden" id="dark" data="build/assets/img/Logo-Dark.svg"></object> -->
+            <img src="build/assets/img/Logo-Light.embed.svg" class="logo" id="light" alt="">
+            <img src="build/assets/img/Logo-Dark.embed.svg" class="logo hidden" id="dark" alt="">
 
 
             <ul class="main-nav" id="js-menu">
@@ -305,7 +306,7 @@
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-linkedin-in"></i>
                 </div>
-                <a class="btn">Lets talk.</a>
+                <a class="btn" id="btn">Lets talk.</a>
 
             </div>
         </div>
@@ -321,7 +322,7 @@
 
 
     <div id="darkmode-btn">
-        <img src="build/assets/img/half-moon.svg" class="moon light btn-dark-mode" id="js-dark-mode-image"
+        <img src="build/assets/img/half-moon.svg" class="moon light btn-dark-mode hidden-desk" id="js-dark-mode-image"
             onclick="darkmode();" alt="">
     </div>
 
