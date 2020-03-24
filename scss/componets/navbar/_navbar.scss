@@ -16,6 +16,10 @@ a {
     color: inherit;
 }
 
+.hidden-mob{
+    display: none;
+}
+
 .main-nav li {
     text-align: center;
     margin: 15px auto;
@@ -24,15 +28,18 @@ a {
 .logo {
     display: inline-block;
     width: 50px;
+
 }
 
 .navbar-toggle {
     position: absolute;
+    display: block;
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: black;
+    color: inherit;
     font-size: 24px;
+    margin: 10px;
 }
 
 .active {
@@ -77,6 +84,10 @@ a {
         width: 25px;
         margin: 0 10px 10px 25px;
         cursor: pointer;
+    }
+
+    .hidden-mob{
+        display: block;
     }
 
     .navbar-toggle {

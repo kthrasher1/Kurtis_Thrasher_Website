@@ -1,0 +1,144 @@
+.welcome{
+    div {
+        margin-top: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: auto;
+    }
+
+    h1{
+        font-size: 4em;
+        margin-right: 20px;
+    }
+
+    .name::after {
+        content: "";
+        float: right;
+        background: black;
+        width: 65%;
+        height: 10px;
+        border-radius: 15px;
+        margin-top: -15px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 17.5px;
+    }
+
+
+    .btn {
+        display: block;
+        text-align: center;
+        width: 150px;
+        font-weight: 600;
+        margin-top: 35px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        padding: 1rem 1.50rem;
+        cursor: pointer;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        &:hover {
+            background-color: rgba($color: black, $alpha: 0.9);
+        }
+    }
+
+    .darkmode--btn {
+        color: black;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .welcome {
+
+        div {
+            margin-top: 175px;
+            margin-left: 15%;
+            margin-right: 15%;
+            height: calc(100vh - 30em);
+            width: auto;
+        }
+
+        h1 {
+            font-size: 8em;
+            margin-right: 40px;
+
+        }
+
+
+        h2 {
+            font-size: 50px;
+        }
+
+        p {
+            margin-top: 10px;
+            width: 750px;
+            font-size: 25px;
+        }
+
+
+
+        .btn {
+            margin-top: 50px;
+            padding: 1.25rem 1.75rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            &:hover {
+                background-color: rgba($color: black, $alpha: 0.9);
+            }
+        }
+
+        .darkmode--btn {
+            color: black;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+        }
+
+
+
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .welcome div {
+        margin-top: 200px;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: calc(100vh - 25em);
+        width: auto;
+
+        h1 {
+            font-size: 10em;
+        }
+
+        h2 {
+            font-size: 4em;
+        }
+
+        p {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .name::after {
+            width: 55%;
+            margin-right: 0.75em;
+        }
+
+        a {
+            margin-top: 75px;
+        }
+    }
+}

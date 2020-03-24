@@ -5,38 +5,42 @@ navBarToggle.addEventListener("click", function () {
     mainNav.classList.toggle("active");
 });
 let image_tracker = 'moon';
-
-let darkModeToggler = document.getElementById('js-dark-mode');
-
+let line_tracker = 'black';
 
 
-darkModeToggler.addEventListener("click", function () {
+function darkmode() {
 
     document.querySelector("body").classList.toggle("darkmode--on");
     document.querySelector("a").classList.toggle("darkmode--nav");
     document.getElementById("footer").classList.toggle("darkmode--footer");
 
-    var styleElem = document.head.appendChild(document.createElement("style"));
-    styleElem.innerHTML = ".name::after {background: white !important;}";
 
-    //document.getElementById("btn").classList.toggle("darkmode--btn");
+    if(line_tracker == 'black'){
+        let styleElem = document.head.appendChild(document.createElement("style"));
+        styleElem.innerHTML = ".name::after {background: white !important;}";
 
-    var btns = document.getElementsByClassName('btn');
-    for (var i = 0; i < btns.length; i++) {
+        line_tracker  = 'white';
+
+    }else{
+        let styleElem = document.head.appendChild(document.createElement("style"));
+        styleElem.innerHTML = ".name::after {background: black !important;}";
+
+        line_tracker = 'black';
+    }
+
+
+    let btns = document.getElementsByClassName('btn');
+    for (let i = 0; i < btns.length; i++) {
         btns[i].classList.toggle("darkmode--btn");
     }
 
-    var project = document.getElementsByClassName('project-info');
-    for (var i = 0; i < project.length; i++) {
+    let project = document.getElementsByClassName('project-info');
+    for (let i = 0; i < project.length; i++) {
         project[i].classList.toggle("darkmode--project");
     }
 
-
-
-});
-
-function changeImage() {
     let image = document.getElementById('js-dark-mode');
+    let image_two = document.getElementById('js-dark-mode-image');
     let light = document.getElementById('light');
     let dark = document.getElementById('dark');
 
@@ -44,13 +48,16 @@ function changeImage() {
         light.classList.add("hidden");
         dark.classList.remove("hidden");
         image.src = 'build/assets/img/sun.svg';
+        image_two.src = 'build/assets/img/sun.svg';
 
         image_tracker = 'sun';
     } else {
         dark.classList.add("hidden");
         light.classList.remove("hidden");
         image.src = 'build/assets/img/half-moon.svg';
+        image_two.src = 'build/assets/img/half-moon.svg';
 
         image_tracker = 'moon';
     }
-}
+
+};

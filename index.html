@@ -19,6 +19,9 @@
             </span>
             <object class="logo" id="light" data="build/assets/img/Logo-Light.svg"></object>
             <object class="logo hidden" id="dark" data="build/assets/img/Logo-Dark.svg"></object>
+
+
+
             <ul class="main-nav" id="js-menu">
                 <li>
                     <a href="#" class="nav-links">About me</a>
@@ -37,8 +40,8 @@
                 </li>
                 <li>
 
-                    <img src="build/assets/img/half-moon.svg" class="moon light" id="js-dark-mode"
-                        onclick="changeImage();" alt="">
+                    <img src="build/assets/img/half-moon.svg" class="moon light hidden-mob" id="js-dark-mode"
+                        onclick="darkmode();" alt="">
 
                 </li>
             </ul>
@@ -46,11 +49,12 @@
         </nav>
     </header>
 
+
     <section class="welcome">
         <div>
             <h2>Hello,</h2>
             <h1>I'm <span class="name" id="name"> Kurtis. </span></h1>
-            <p>A graduate computer scientist with a keen interest </br>
+            <p>A graduate computer scientist with a keen interest
                 in web technologies.</p>
 
             <a class="btn" id="btn">Lets talk.</a>
@@ -78,7 +82,7 @@
                 <li>PHP</li>
                 <li>HTML</li>
                 <li>(S)CSS</li>
-                <li>JavaScript (ES6)</li>
+                <li>JavaScript</li>
                 <li>Laravel</li>
                 <li>Vue.js</li>
             </ul>
@@ -185,7 +189,7 @@
                         <h4>Digital Checkup</h4>
                         <p>
                             Digital Checkup was a project created by myself and Nathaniel Read for the Sustainable
-                            Computing module during the first year of our Computer Science degree.The module taught
+                            Computing module.The module taught
                             importance of online security.
                         </p>
                     </div>
@@ -314,6 +318,12 @@
             <p>🏳️‍🌈</p>
         </div>
     </footer>
+
+
+    <div id="darkmode-btn">
+        <img src="build/assets/img/half-moon.svg" class="moon light btn-dark-mode" id="js-dark-mode-image"
+            onclick="darkmode();" alt="">
+    </div>
 
 </body>
 

@@ -2,6 +2,13 @@
 @import "defaults/variables";
 
 @import "defaults/typography";
-@import "componets/navbar/navbar";
 
+@import "componets/navbar/navbar";
 @import "defaults/base";
+
+
+@import "componets/welcome";
+@import "componets/about";
+@import "componets/work";
+@import "componets/projects";
+@import "componets/contact";
