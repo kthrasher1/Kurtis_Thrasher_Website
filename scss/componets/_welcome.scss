@@ -11,22 +11,12 @@
         margin-right: 20px;
     }
 
-    .name::after {
-        content: "";
-        float: right;
-        background: black;
-        width: 200px;
-        height: 10px;
-        border-radius: 15px;
-        margin-top: -15px;
-    }
-
     h2 {
         font-size: 30px;
     }
 
     p {
-        margin-top: 5px;
+        margin-top: 3px;
         font-size: 17.5px;
     }
 
@@ -83,7 +73,6 @@
         }
 
         p {
-            margin-top: 10px;
             width: 750px;
             font-size: 25px;
         }
@@ -120,15 +109,10 @@
 
         p {
             font-size: 30px;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
-        .name::after {
-            width: 55%;
-            margin-right: 0.75em;
-        }
-
-        a {
+        .btn {
             margin-top: 75px;
         }
     }
