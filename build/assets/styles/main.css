@@ -489,6 +489,11 @@ footer p {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.projects .project-work .project-container a {
+  text-decoration: underline;
+  font-family: "Inconsolata", monospace;
+}
+
 .projects .project-work .project-container .project-footer p {
   font-size: 15px;
 }
@@ -799,10 +804,21 @@ footer p {
 .contact-me .socials {
   font-size: 17.5px;
   margin-top: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.contact-me .socials div {
+  margin-right: 10px;
 }
 
 .contact-me .socials i {
   margin-right: 10px;
+}
+
+.contact-me .socials i:hover {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (min-width: 768px) {
@@ -833,6 +849,9 @@ footer p {
   }
   .contact-me .contact-container .btn:hover {
     background-color: rgba(0, 0, 0, 0.9);
+  }
+  .contact-me .contact-container .socials {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */
