@@ -54,6 +54,10 @@ a {
   display: none;
 }
 
+.resume {
+  border: 1px black solid;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -225,10 +229,6 @@ footer p {
 @media screen and (min-width: 1400px) {
   section {
     height: calc(100vh - 7em);
-  }
-  .project-container {
-    margin-left: 10%;
-    margin-right: 10%;
   }
 }
 
@@ -721,14 +721,14 @@ footer p {
             justify-content: left;
   }
   .projects .project-work {
-    margin-left: 14%;
+    margin-left: 15%;
     width: 60%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .projects .project-work h3 {
-    font-size: 35px;
+    font-size: 50px;
   }
   .projects .project-work .project-container {
     font-size: 25px;
@@ -748,7 +748,6 @@ footer p {
 
 @media screen and (min-width: 1400px) {
   .projects .project-container {
-    margin-left: 10%;
     margin-right: 10%;
   }
 }
@@ -826,7 +825,6 @@ footer p {
     font-size: 25px !important;
   }
   .contact-me .contact-container .contact-content {
-    margin-left: 10%;
     margin-right: 10%;
   }
   .contact-me .contact-container .btn {
