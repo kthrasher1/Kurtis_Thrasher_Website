@@ -2,7 +2,21 @@
     font-size: 18px;
     padding-bottom: 10px;
     position: relative;
+    animation-name: slide-down-fade-in;
+    animation-duration: 1.25s;
+    animation-timing-function: cubic-bezier(.8,0,.2,1);
 
+}
+
+@keyframes slide-down-fade-in {
+    0% {
+        //transform: translateY(-3.5vh);
+        opacity: 0;
+    }
+    100% {
+        //transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .main-nav {

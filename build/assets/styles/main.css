@@ -47,6 +47,30 @@ a {
   font-size: 18px;
   padding-bottom: 10px;
   position: relative;
+  -webkit-animation-name: slide-down-fade-in;
+          animation-name: slide-down-fade-in;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+@-webkit-keyframes slide-down-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main-nav {
@@ -233,6 +257,36 @@ footer p {
   margin-left: 10%;
   margin-right: 10%;
   width: auto;
+  -webkit-animation-name: slide-up-fade-in;
+          animation-name: slide-up-fade-in;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@-webkit-keyframes slide-up-fade-in {
+  0% {
+    -webkit-transform: translateY(3.5vh);
+            transform: translateY(3.5vh);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up-fade-in {
+  0% {
+    -webkit-transform: translateY(3.5vh);
+            transform: translateY(3.5vh);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .welcome h1 {

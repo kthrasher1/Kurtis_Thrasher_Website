@@ -4,6 +4,19 @@
         margin-left: 10%;
         margin-right: 10%;
         width: auto;
+        animation-name: slide-up-fade-in ;
+        animation-duration: 0.7s;
+    }
+
+    @keyframes slide-up-fade-in {
+        0% {
+            transform: translateY(3.5vh);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
     h1{
